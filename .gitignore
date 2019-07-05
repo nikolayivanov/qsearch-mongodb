@@ -1,0 +1,9 @@
+QSearch/packages/
+QSearch/.vs/QSearch/v16/.suo
+QSearch/.vs/QSearch/v16/Server/sqlite3/db.lock
+QSearch/.vs/QSearch/config/applicationhost.config
+QSearch/QSearch.Web/obj/
+QSearch/QSearch.Tests/obj/
+QSearch/.vs/
+QSearch/QSearch.Web/bin/
+QSearch/QSearch.Web/QSearch.Web.csproj.user

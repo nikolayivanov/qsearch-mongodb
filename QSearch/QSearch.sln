@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSearch.Web", "QSearch.Web\QSearch.Web.csproj", "{56F871E2-CD7C-4B5C-B4C4-F9718D51CA58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSearch.Tests", "QSearch.Tests\QSearch.Tests.csproj", "{4E1D7D5C-3632-45A7-89AE-5134D26CDCC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{59AA8D82-B1B2-49DD-95B7-1FD117E89D2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8FB5B1F3-358E-4D6A-B15C-29092290B174}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{EEED1043-08C8-4947-A96B-F3DFAAE8727B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSearch.Core", "QSearch.Core\QSearch.Core.csproj", "{E8B176F6-3ABB-4D54-B606-382AC378750B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSearch.Core.Impl", "QSearch.Core.Impl\QSearch.Core.Impl.csproj", "{F41366BC-F121-40F3-9581-FE2015FF0B4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56F871E2-CD7C-4B5C-B4C4-F9718D51CA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F871E2-CD7C-4B5C-B4C4-F9718D51CA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F871E2-CD7C-4B5C-B4C4-F9718D51CA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F871E2-CD7C-4B5C-B4C4-F9718D51CA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1D7D5C-3632-45A7-89AE-5134D26CDCC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1D7D5C-3632-45A7-89AE-5134D26CDCC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1D7D5C-3632-45A7-89AE-5134D26CDCC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1D7D5C-3632-45A7-89AE-5134D26CDCC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B176F6-3ABB-4D54-B606-382AC378750B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B176F6-3ABB-4D54-B606-382AC378750B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B176F6-3ABB-4D54-B606-382AC378750B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B176F6-3ABB-4D54-B606-382AC378750B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41366BC-F121-40F3-9581-FE2015FF0B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41366BC-F121-40F3-9581-FE2015FF0B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41366BC-F121-40F3-9581-FE2015FF0B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41366BC-F121-40F3-9581-FE2015FF0B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E1D7D5C-3632-45A7-89AE-5134D26CDCC2} = {8FB5B1F3-358E-4D6A-B15C-29092290B174}
+		{E8B176F6-3ABB-4D54-B606-382AC378750B} = {59AA8D82-B1B2-49DD-95B7-1FD117E89D2A}
+		{F41366BC-F121-40F3-9581-FE2015FF0B4D} = {8FB5B1F3-358E-4D6A-B15C-29092290B174}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4401DCD-74C3-497E-B9F1-47E37A823483}
+	EndGlobalSection
+EndGlobal
