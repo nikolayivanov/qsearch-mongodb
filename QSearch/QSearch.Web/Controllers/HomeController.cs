@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QSearch.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,20 @@ namespace QSearch.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private IQuestSearchService searchsrv;
+
+        public HomeController()
+        {
+        }
+
+        public HomeController(IQuestSearchService searchsrv)
+        {
+            this.searchsrv = searchsrv;
+        }
+
         public ActionResult Index()
         {
+            this.searchsrv.Search(new SearchQuery() { QueryText = "java" });
             return View();
         }
 

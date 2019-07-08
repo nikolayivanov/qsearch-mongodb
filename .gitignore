@@ -7,3 +7,8 @@ QSearch/QSearch.Tests/obj/
 QSearch/.vs/
 QSearch/QSearch.Web/bin/
 QSearch/QSearch.Web/QSearch.Web.csproj.user
+QSearch/QSearch.Tests/bin/
+QSearch/QSearch.Core/bin/
+QSearch/QSearch.Core/obj/
+QSearch/QSearch.Core.Impl/bin/
+QSearch/QSearch.Core.Impl/obj/
