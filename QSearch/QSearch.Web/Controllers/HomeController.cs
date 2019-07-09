@@ -22,7 +22,7 @@ namespace QSearch.Web.Controllers
 
         public ActionResult Index()
         {
-            this.searchsrv.Search(new SearchQuery() { QueryText = "java" });
+            this.searchsrv.Search(new SearchQuery() { QueryText = ".net core" });
             return View();
         }
 

@@ -26,7 +26,7 @@ namespace QSearch.Core.Impl
             }
 
             var res = this.apiclient.Search(query);
-            cachesrv.addToCache(query, new List<SearchResult>(res));
+            Task.Run(async () => await  cachesrv.addToCache(query, new List<SearchResult>(res)));            
             return new List<SearchResult>(res);
         }
     }

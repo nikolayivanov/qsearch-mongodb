@@ -1,6 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Threading.Tasks;
@@ -24,11 +25,10 @@ namespace QSearch.Core.Impl
         {
             var client = new MongoClient(this.connectionstr);
             var db = client.GetDatabase(this.databaseName);
-            var collection = db.GetCollection<BsonDocument>(colnameSearhResults);
-
+            var collection = db.GetCollection<BsonDocument>(colnameSearhResults);            
             var doc = new BsonDocument () { 
                 { "query", query.QueryText.ToLower() },
-                { "result", result.ToBson() }
+                { "result", GetBsonDocumentArray(result) }
             };
 
             await collection.InsertOneAsync(doc);
@@ -55,6 +55,17 @@ namespace QSearch.Core.Impl
             }
 
             return reslist;
+        }
+
+        private BsonArray GetBsonDocumentArray(IEnumerable<SearchResult> list)
+        {
+            var array = new BsonArray();
+            foreach (var item in list)
+            {
+                array.Add(item.ToBsonDocument());
+            }
+
+            return array;
         }
     }
 }
