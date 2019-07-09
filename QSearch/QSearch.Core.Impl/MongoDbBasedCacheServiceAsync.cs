@@ -48,10 +48,14 @@ namespace QSearch.Core.Impl
             var reslist = new List<SearchResult>();
             foreach (var res in results)
             {
-                reslist.Add(new SearchResult() {
-                    link = res["result.link"].AsString,
-                    title = res["result.title"].AsString
-                });
+                foreach (var item in (BsonArray)res["result"])
+                {
+                    reslist.Add(new SearchResult()
+                    {
+                        link = item["link"].AsString,
+                        title = item["title"].AsString
+                    });
+                }
             }
 
             return reslist;
